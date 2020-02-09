@@ -1,0 +1,94 @@
+.background{
+    background-image: url("photo.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
+}
+
+.logo {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links .lol, .cta a {
+  position: relative;
+  top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  position: relative;
+  top: -8px;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta button{
+  padding: 10px 20px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover button{
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+}
+
+.nav__links input[type="text"]{
+    font-family: 'Montserrat', sans-serif;
+    border-color:lightgrey;
+    text-style: bold;
+    position: relative;
+    background: lightgrey;
+    border-style:solid;
+    border-radius: 15px;
+    height: 35px;
+    width: 100px auto;
+}
+
+.srch{
+    color: #24252a;
+    position: relative;
+    right: 30px;
+}
+

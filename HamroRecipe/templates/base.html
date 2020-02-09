@@ -1,0 +1,22 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <script src="https://kit.fontawesome.com/f2577888b8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/layout1.css' %}">
+    <script src="{% static 'js/read.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/card-layout.css' %}">
+    <link rel="stylesheet" href="{% static 'css/img-slider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+    {% include 'partials/navbar.html' %}
+    <div class="background">
+    {% block content %}
+
+    {% endblock %}
+    </div>
+</body>
+</html>

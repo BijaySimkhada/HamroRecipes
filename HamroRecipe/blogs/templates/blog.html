@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="blog-wrapper">
+    <h1>Upload Blog</h1>
+    <hr width="78%">
+    <div class="blog-uploader">
+
+        <form action="/blog/" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="hidden" value="{{ user.username }}" name="username">
+        <input type="text" name="title" placeholder="title" class="content"><br>
+        <input type="text" name="slug" placeholder="Slug" class="content"><br>
+        <textarea name="body" id="" cols="30" rows="10" placeholder="Description Here" class="content"></textarea><br>
+        <input type="file" name = "image" class="content"><br>
+        <button type="submit" class="content">Upload</button>
+    </form>
+    </div>
+    <h1>Blog Posts</h1>
+    <hr width="78%">
+    {% for article in articles %}
+    <div class="blog-container">
+        <p class="title">{{ article.title }}</p>
+        <p class="wr"><i>{{ article.user_name }}</i></p>
+        <p class="slug">{{ article.slug }}</p>
+        <p><img src="{{ article.img.url }}" alt=""></p>
+        <p class="body">{{ article.body }}</p>
+        <p class="date"><i>Uploaded at:</i>{{ article.date }}</p>
+        <br>
+    </div>
+    <hr width="95%">
+{% endfor %}
+</div>
+{% endblock %}
