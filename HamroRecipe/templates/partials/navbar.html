@@ -3,7 +3,7 @@
             {% if user.is_authenticated %}
             <nav>
              <ul class="nav__links">
-            <li><a href="/" class="lol">Home</a></li>
+            <li><a href="{% url 'home' %}" class="lol">Home</a></li>
              <li><a href="#" class="lol">Contact</a></li>
             <li><input type="text" name="search" placeholder="  search here">
                 <a href="#" class="srch">
@@ -12,7 +12,7 @@
                 </input>
             </li>
             <li><a href="#" class="lol">Recipies</a></li>
-            <li><a href="blog/" class="lol">Blog</a></li>
+            <li><a href="{% url 'blog' %}" class="lol">Blog</a></li>
             <li><a href="#" class="lol">Hello, {{user.first_name}}</a></li>
              </ul>
             </nav>

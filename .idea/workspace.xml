@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="677eae63-5f6c-485f-b711-3b34176af2a0" name="Default Changelist" comment="" />
+    <list default="true" id="677eae63-5f6c-485f-b711-3b34176af2a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/templates/partials/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/templates/partials/navbar.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,5 +60,11 @@
       <updated>1579526144224</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="442" y="173" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581332852898">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="442" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1581332852898" />
   </component>
 </project>
