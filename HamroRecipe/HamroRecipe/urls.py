@@ -18,6 +18,9 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+admin.site.site_header = "HamroRecipe"
+admin.site.site_title = "HamroRecipe"
+admin.site.index_title = "|Admin|HamroRecipe"
 
 urlpatterns = [
     path('admin/', admin.site.urls),

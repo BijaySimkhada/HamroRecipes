@@ -19,7 +19,7 @@ def login(request):
 			messages.info(request, 'invalid credentials')
 			return redirect("login")
 	else:
-		return render(request, 'accounts/login.html', {'title':'Login | HamroRecipe'})
+		return render(request, 'accounts/login.html', {'title': 'Login | HamroRecipe'})
 
 def register(request):
 	if request.method == 'POST':

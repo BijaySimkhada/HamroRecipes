@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}
+Recipe | HamroRecipe
+{% endblock %}
+{% block content %}
+<div class="recipe-holder">
+{% for recipe in recipes %}
+    <div class="post-holder">
+        <h2>{{ recipe.r_name }}</h2>
+    </div>
+{% endfor %}
+    <div class="recipe-form-holder">
+        <h1>Share your Recipe with Us</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="hidden" name="username" value="{{ user.username }}"/>
+        <li><input type="text" name="r_name" placeholder="Recipe Name Here"></li>
+        <li><textarea name="description" placeholder="Tell us more | Description"></textarea></li>
+        <li><textarea name="incredients" placeholder="Incredients (NOTE write by giving comma',')"></textarea></li>
+        <li><input type="file" name="img"></li>
+        <li><h2>Category</h2></li>
+        <li><select name="category" id="category">
+            <option value="Continental">Continental</option>
+            <option value="Local">Local</option>
+            <option value="Oriental">Oriental</option>
+            <option value="Western">Western</option>
+            <option value="Sweets">Sweets</option>
+        </select></li>
+        <li><h2>Type</h2></li>
+        <li><select name="type" id="type">
+            <option value="veg">Vegetarian</option>
+            <option value="non-veg">Non-Vegetarian</option>
+        </select></li>
+        <li><h2>Procedure</h2></li>
+        <li><input type="text" placeholder="step1"></li>
+        <li><input type="text" placeholder="step2"></li>
+        <li><input type="text" placeholder="step3"></li>
+        <li><input type="text" placeholder="step4"></li>
+        <li><input type="text" placeholder="step5"></li>
+        <li><a href="#" onclick="showMoreItems()" id="forJs">More process</a></li>
+        <section id="moreinc">
+        <li><input type="text" placeholder="step6" ></li>
+        <li><input type="text" placeholder="step7" ></li>
+        <li><input type="text" placeholder="step8" ></li>
+        <li><input type="text" placeholder="step9" ></li>
+        <li><input type="text" placeholder="step10"></li>
+        <li><input type="text" placeholder="step11"></li>
+        <li><input type="text" placeholder="step12"></li>
+        <li><input type="text" placeholder="step13"></li>
+        <li><input type="text" placeholder="step14"></li>
+        <li><input type="text" placeholder="step15"></li>
+        <li><input type="text" placeholder="step16"></li>
+        </section>
+        <li><button type="submit">Submit</button></li>
+    </form>
+    </div>
+</div>
+{% endblock %}
