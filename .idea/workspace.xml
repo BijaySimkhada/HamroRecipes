@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="677eae63-5f6c-485f-b711-3b34176af2a0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/blog.css" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/blog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/templates/partials/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/templates/partials/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,26 +22,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Wf25QcHfblHXn3lk5Io0wPHkFw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/HamroRecipe/blogs" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PythonRecipe\HamroRecipe\blogs" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PythonRecipe\HamroRecipe\recipies\templates" />
       <recent name="D:\PythonRecipe\HamroRecipe\blogs\templates" />
       <recent name="D:\PythonRecipe\HamroRecipe\HamroRecipe\static\image" />
       <recent name="D:\PythonRecipe\HamroRecipe\media\photos" />
       <recent name="D:\PythonRecipe\HamroRecipe\media" />
-      <recent name="D:\PythonRecipe\HamroRecipe\media\photos\logo" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PythonRecipe\HamroRecipe\blogs" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -66,5 +77,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="442" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1581332852898" />
+    <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581520829342">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1581520829342" />
   </component>
 </project>
