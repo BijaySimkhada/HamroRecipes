@@ -5,18 +5,15 @@
             <nav>
              <ul class="nav__links">
             <li><a href="{% url 'home' %}" class="lol">Home</a></li>
-
-
-
             <li><a href="{% url 'recipe' %}" class="lol">Recipes</a></li>
-            <li><a href="{% url 'blog' %}" class="lol">Blog</a></li>
-                  <li><a href="{% url 'contact' %}" class="lol">Contact</a></li>
-                  <li><input type="text" name="search" placeholder="  search here">
+            <li><input type="text" name="search" placeholder="  search here">
                 <a href="#" class="srch">
                     <i class="fas fa-search"></i>
                 </a>
                 </input>
             </li>
+            <li><a href="{% url 'blog' %}" class="lol">Blog</a></li>
+            <li><a href="{% url 'contact' %}" class="lol">Contact</a></li>
             <li><a href="#" class="lol">Hello, {{user.first_name}}</a></li>
              </ul>
             </nav>

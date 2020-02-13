@@ -97,3 +97,24 @@
     border-radius: 5px;
     box-shadow: 0 0 15px #000000cd;
 }
+
+.recipe-holder .post-holder .card-container{
+    position: relative;
+    padding: 20px 20px 20px 10px;
+    height: 15vh auto;
+    width: 230px;
+    background-color:#fff;
+    box-shadow: 0 0 15px #000000cd;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.recipe-holder .recipe{
+    font-family: 'Great Vibes', cursive;
+    font-size: 15vh;
+}
+
+.recipe-holder .recipe:hover{
+    color: #0088a9;
+    cursor: pointer;
+}

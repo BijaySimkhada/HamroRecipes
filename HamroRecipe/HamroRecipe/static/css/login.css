@@ -5,22 +5,22 @@
   font-family: montserrat;
   box-sizing: border-box;
 }
-
-body{
-  min-height: 100vh;
-  background-image: linear-gradient(120deg,#3498db,#8e44ad);
+.new-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.login-form{
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 480px;
   width: 360px;
   background: #f1f1f1;
-  height: 580px;
   padding: 80px 40px;
   border-radius: 10px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  margin: 50px;
 }
 
 .login-form h1{
@@ -37,6 +37,7 @@ body{
 .txtb input{
   font-size: 15px;
   color: #333;
+  background: silver;
   border: none;
   width: 100%;
   outline: none;
@@ -61,7 +62,7 @@ body{
   position: absolute;
   width: 0%;
   height: 2px;
-  background: linear-gradient(120deg,#3498db,#8e44ad);
+  background: linear-gradient(120deg,#3498db,#8e44ad,#3498db);
   transition: .5s;
 }
 
@@ -87,6 +88,7 @@ body{
 
 .logbtn:hover{
   background-position: right;
+  border-radius: 10px;
 }
 
 .bottom-text{

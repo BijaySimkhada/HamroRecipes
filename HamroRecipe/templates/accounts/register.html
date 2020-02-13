@@ -1,62 +1,18 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-
-<h1>This is register page</h1>
-
-<!-- Form for design -->
-<!-- <v-container>
-  <v-row justify="space-around" align="center">
-    <v-form ref="form" v-model="valid" :lazy-validation="lazy">
-      <v-text-field
-        v-model="name"
-        :counter="10"
-        :rules="nameRules"
-        label="Name"
-        required
-      ></v-text-field>
-
-      <v-text-field
-        v-model="email"
-        :rules="emailRules"
-        label="E-mail"
-        required
-      ></v-text-field>
-
-      <v-text-field
-        v-model="password"
-        :counter="10"
-        :rules="nameRules"
-        label="Password"
-        required
-      ></v-text-field>
-
-      <v-btn color="success" class="mr-4">
-        Create
-      </v-btn>
-      <v-btn color="warning" @click="resetValidation">
-        Cancel
-      </v-btn>
-    </v-form>
-  </v-row>
-</v-container> -->
-
-  
-  
-   <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-  </head>
-  <body>
+<div class="new-wrapper">
     <div class="signup-form">
       <form class="" action="register" method="post">
           {% csrf_token %}
         <h1>Sign Up</h1>
-        <input type="text" placeholder="Full Name" class="txtb">
-        <input type="email" placeholder="Email" class="txtb">
-        <input type="password" placeholder="Password" class="txtb">
+        <input type="text" name="first_name" placeholder="First Name" class="txtb">
+        <input type="text" name="last_name" placeholder="Last Name" class="txtb">
+        <input type="text" name="username" placeholder="Username" class="txtb">
+        <input type="email" name ="email" placeholder="Email" class="txtb">
+        <input type="password" placeholder="Password" class="txtb" name="password1">
+        <input type="password" placeholder="Confirm Password" class="txtb" name="password2">
         <input type="submit" value="Create Account" class="signup-btn">
-        <a href="#">Already Have one ?</a>
+        Already Have one ? <a href="login">Login</a>
       </form>
     </div>
   </body>
@@ -66,3 +22,4 @@
   {% endfor %}
 </v-container>
 {% endblock %}
+</div>
