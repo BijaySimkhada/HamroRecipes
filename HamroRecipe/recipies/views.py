@@ -11,6 +11,10 @@ def showContact(request):
     return render(request, 'pages/contact.html', {'title':"Contact | HamroRecipe"})
 
 
+def showInstitutes(request):
+    return render(request, 'pages/institutes.html', {'title':"Institutes | HamroRecipe"})
+
+
 def showRecipe(request):
     if request.method == 'POST':
         r_name = request.POST['r_name']
