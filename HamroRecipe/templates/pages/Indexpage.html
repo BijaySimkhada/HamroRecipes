@@ -1,17 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
- <section class="slider-container">
+ <div class="slider-container">
     <div id="slider">
         <figure>
-        <img src="{% static 'image/khana.png' %}" alt="photo xaina">
+        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
         <img src="{% static 'image/photo.jpg' %}" alt="photo xaina">
-        <img src="{% static 'image/khana.png' %}" alt="photo xaina">
+        <img src="{% static 'image/khana1.png' %}" alt="photo xaina">
         <img src="{% static 'image/photo.jpg' %}" alt="photo xaina">
-        <img src="{% static 'image/khana.png' %}" alt="photo xaina">
+        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
         </figure>
     </div>
- </section>
+ </div>
+<section>
 <div class="card-wrapper">
     <div class="card-container">
           <div class="header">
@@ -19,7 +20,55 @@
             </div>
             <div class="card-body">
                 <div class="image-container">
-                    <img src="{% static 'image/khana.png' %}" alt="photo nai xaina"/>
+                    <img src="{% static 'image/photo.jpg' %}" alt="photo nai xaina"/>
+                </div>
+            </div>
+            <div class="footer">
+                <p>i am a hantakali <a href="#" id="read" onclick="expand()">readmore...</a></p>
+                <div id="content" ><p> i like to eat verymuch i want to eat every day
+                i like to eat verymuch i want to eat every day i like to eat verymuch
+                    i want to eat every day</p></div>
+            </div>
+        </div>
+     <div class="card-container">
+          <div class="header">
+                <p>Title</p>
+            </div>
+            <div class="card-body">
+                <div class="image-container">
+                    <img src="{% static 'image/photo.jpg' %}" alt="photo nai xaina"/>
+                </div>
+            </div>
+            <div class="footer">
+                <p>i am a hantakali <a href="#" id="read" onclick="expand()">readmore...</a></p>
+                <div id="content" ><p> i like to eat verymuch i want to eat every day
+                i like to eat verymuch i want to eat every day i like to eat verymuch
+                    i want to eat every day</p></div>
+            </div>
+        </div>
+     <div class="card-container">
+          <div class="header">
+                <p>Title</p>
+            </div>
+            <div class="card-body">
+                <div class="image-container">
+                    <img src="{% static 'image/photo.jpg' %}" alt="photo nai xaina"/>
+                </div>
+            </div>
+            <div class="footer">
+                <p>i am a hantakali <a href="#" id="read" onclick="expand()">readmore...</a></p>
+                <div id="content" ><p> i like to eat verymuch i want to eat every day
+                i like to eat verymuch i want to eat every day i like to eat verymuch
+                    i want to eat every day</p></div>
+            </div>
+        </div>
+     <div class="card-container">
+          <div class="header">
+                <p>Title</p>
+            </div>
+            <div class="card-body">
+                <div class="image-container">
+                    <img src="{% static 'image/photo.jpg' %}" alt="photo nai xaina"/>
                 </div>
             </div>
             <div class="footer">
@@ -30,4 +79,89 @@
             </div>
         </div>
     </div>
+<div class="menu">
+    <div class="welcome">
+        <h1>Welcome</h1>
+        <p>we make it happen, something amazing for you everyday. </p>
+    </div>
+    <div class="menu-card">
+     <div class="menu-container">
+          <div class="menu-header">
+                <p>Title</p>
+            </div>
+            <div class="menu-footer">
+                <p> i like to eat verymuch i want to eat every day
+                i like to eat verymuch i want to eat every day i like to eat verymuch
+                    i want to eat every day</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<section class="slider-container">-->
+<!--    <div id="slider">-->
+<!--        <figure>-->
+<!--        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">-->
+<!--        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">-->
+<!--        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">-->
+<!--        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">-->
+<!--        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">-->
+<!--        </figure>-->
+<!--    </div>-->
+<!-- </section>-->
+
+<div class="profile">
+    <div class="welcome">
+          <h1>Our Top Chef</h1>
+                <p class="cont"> here are some of our top recipe providers</p>
+    </div>
+    <div class="profile-container">
+            <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Michele Miller</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+         <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Michele Miller</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+      </div>
+         <div class="our-team">
+        <div class="picture">
+          <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+        </div>
+        <div class="team-content">
+          <h3 class="name">Michele Miller</h3>
+          <h4 class="title">Web Developer</h4>
+        </div>
+        <ul class="social">
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
+          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+        </ul>
+         </div>
+        </div>
+    </div>
+</div>
+</section>
 {% endblock %}
