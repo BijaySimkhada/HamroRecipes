@@ -1,7 +1,7 @@
 .recipe-holder{
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
     flex-direction: column;
     position: relative;
     left: 10%; 
@@ -86,11 +86,13 @@
     transition: 0.5s;
 }
 
-.recipe-holder .post-holder{
+ .recipe-holder .post-holder{
     background-color: whitesmoke;
-    display: flex;
+    display:flex;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     height: 50vh auto;
     width: 85%;
     margin: 20px;
@@ -98,7 +100,7 @@
     box-shadow: 0 0 15px #000000cd;
 }
 
-.recipe-holder .post-holder .card-container{
+ .card-container{
     position: relative;
     padding: 20px 20px 20px 10px;
     height: 15vh auto;
