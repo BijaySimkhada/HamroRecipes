@@ -104,7 +104,7 @@
          }
          .footer-container{
            background-color: #333;
-            height:40vh;
+            height:20vh;
             display:flex;
             align-items:center;
             flex-wrap:wrap-reverse;
