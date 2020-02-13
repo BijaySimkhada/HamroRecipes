@@ -28,7 +28,7 @@
             }
         }
         .slider-container{
-            height: 50vh;
+            height: 75vh;
             width: 100%;
         }
         .slider-container #slider{
@@ -36,8 +36,8 @@
             width: 100%;
         }
         .slider-container #slider figure img{
-            height: 65vh;
-            object-fit: contain;
+            height: 90vh;
+            object-fit: cover;
             width: 20%;
             float: left;
             background-color: rgba(169, 169, 169, 0.466);

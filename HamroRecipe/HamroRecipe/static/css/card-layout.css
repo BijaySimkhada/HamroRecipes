@@ -1,43 +1,265 @@
-        .card-container{
+
+.card-container{
+    position: relative;
+    padding: 20px 20px 20px 10px;
+    height: 20vh auto;
+    width: 300px;
+    background-color:#fff;
+    box-shadow: 0 0 15px #000000cd;
+    border-radius: 5px;
+    margin: 15px;
+}
+.header{
+    color:black;
+    font-family:fantasy;
+    border-bottom-style: solid;
+    border-color: coral;
+    margin: 5px;
+}
+.card-container .card-body img{
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 5px;
+}
+#content{
+    height:0px;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+.card-wrapper{
+    padding: 20px 80px 20px 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.footer p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin: 5px;
+}
+         .menu-container{
             position: relative;
             padding: 20px 20px 20px 10px;
-            height: 20vh auto;
-            width: 20%;
+            height: 32vh ;
+            width: 18%;
             background-color:#fff;
             box-shadow: 0 0 15px #000000cd;
-            border-radius: 5px;
+            border-radius: 50%;
             margin: 15px;
+            border-color:blue;
+          }
+          .menu-card{
+            padding: 20px 0px 0px 100px;
+            width: 100%;
+            display: flex;
+            height:40vh;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
         }
-        .header{
+         .menu-footer p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            margin: 5px;
+            position:absolute;
+            width:inherit;
+            top:50%;
+            transform:translateY(-50%);
+        }
+         .menu-header{
             color:black;
             font-family:fantasy;
             border-bottom-style: solid;
             border-color: coral;
             margin: 5px;
+            position:absolute;
+            top:10%;
+            transform:translateX(250%);
         }
-        .card-container .card-body img{
-            height: auto;
-            width: 100%;
-            overflow: hidden;
-            object-fit: cover;
-            margin: 5px;
-        }
-        #content{
-            height:0px;
-            transition: 0.5s ease-in-out;
-            overflow: hidden;
-        }
-        .card-wrapper{
-            padding: 20px;
+
+        .menu-card:hover .menu-container{
+	        box-shadow: 0px 0px 5px #ff9900;
+	        transform: rotateY(360deg);
+            -webkit-transform: rotateY(360deg);
+            -o-transform: rotateY(360deg);
+            -ms-transform: rotateY(360deg);
+            -moz-transform: rotateY(360deg);
+            transition: 0.5s all ease;
+            -webkit-transition: 0.5s all ease;
+            -moz-transition: 0.5s all ease;
+            -o-transition: 0.5s all ease;
+            -ms-transition: 0.5s all ease;
+         }
+        .page-footer {
+        font-family: 'Montserrat', sans-serif;
+            padding: 50px 20px 0px 20px;
+            background-color: #333;
+            height:40vh;
+         }
+         .footer-container{
+           background-color: #333;
+            height:40vh;
+            display:flex;
+            align-items:center;
+            flex-wrap:wrap-reverse;
+            justify-content:space-around;
+         }
+         .contact-us{
+         color: #C9C9C9;
+         }
+         .info{
+         color: #C9C9C9;
+         }
+         .info ul li a{
+         font-size: 14px;
+            color: #8D8D8C;
+            text-decoration: none;
+            padding: 0.2em 0;
+            display: inline-block;
+	        letter-spacing: 1px;
+         }
+         .contact-us ul li a{
+          font-size: 14px;
+            color: #8D8D8C;
+            text-decoration: none;
+            padding: 0.2em 0;
+            display: inline-block;
+	        letter-spacing: 1px;
+         }
+
+
+
+
+
+
+
+
+.profile-container {
+ padding: 20px 20px 0px 20px;
+  font-family: tahoma;
+  height: 60vh;
+  width:100%;
+  display: flex;
+   justify-content: space-around;
+   align-items:center;
+}
+
+.our-team {
+  padding: 20px 20px 20px 20px;
+  box-shadow:0 0 15px #000000cd;
+  margin-bottom: 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  width:20%
+
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #ff9900;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+.profile{
+            padding: 20px 0px 0px 100px;
             width: 100%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-wrap: wrap;
             flex-direction: row;
-        }
-        .footer p{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 15px;
-            margin: 5px;
-        }
+}
