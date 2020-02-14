@@ -5,7 +5,6 @@
     <h1>Upload Blog</h1>
     <hr width="78%">
     <div class="blog-uploader">
-
         <form action="/blog/" method="post" enctype="multipart/form-data">
         {% csrf_token %}
         <input type="hidden" value="{{ user.username }}" name="username">
@@ -16,6 +15,7 @@
         <button type="submit" class="content">Upload</button>
     </form>
     </div>
+    <div class="blog-posts">
     <h1>Blog Posts</h1>
     <hr width="78%">
     {% for article in articles %}
@@ -29,6 +29,7 @@
         <br>
     </div>
     <hr width="95%">
-{% endfor %}
-</div>
+    {% endfor %}
+    </div>
+    </div>
 {% endblock %}

@@ -7,4 +7,5 @@ urlpatterns = [
     path('contact', views.showContact, name="contact"),
     path('institutes', views.showInstitutes, name="institutes"),
     path('recipe', views.showRecipe, name="recipe"),
+    path('recipe-posts', views.showRecipePost, name="rpost"),
 ]
