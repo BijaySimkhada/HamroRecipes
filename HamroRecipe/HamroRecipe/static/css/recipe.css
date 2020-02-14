@@ -89,19 +89,19 @@
  .recipe-holder .post-holder{
     background-color: whitesmoke;
     display:flex;
-    justify-content:center;
+    align-content: space-between ;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
     height: 50vh auto;
-    width: 85%;
+    width: 95%;
     margin: 20px;
     border-radius: 5px;
+    overflow: scroll;
+    padding: 10px 10px 10px 10px;
     box-shadow: 0 0 15px #000000cd;
 }
 
  .card-container{
-    position: relative;
+     display: block;
     padding: 20px 20px 20px 10px;
     height: 15vh auto;
     width: 230px;
