@@ -112,7 +112,8 @@
         font-family: 'Montserrat', sans-serif;
             padding: 50px 20px 0px 20px;
             background-color: #333;
-            height:40vh;
+            height:20vh;
+            padding-bottom: 50px;
          }
          .footer-container{
            background-color: #333;

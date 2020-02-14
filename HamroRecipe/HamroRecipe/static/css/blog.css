@@ -1,5 +1,6 @@
 .blog-wrapper{
     position: relative;
+    padding:0px 0px 20px 0px;
     left: 10%;
     top: 5vh;
     height: auto;
@@ -32,8 +33,10 @@
     top: 5vh;
     width: 80%;
     background-color: none;
-    border-bottom-style: dotted;
-    border-color: coral;
+    border-bottom-style: solid;
+    border-color: rgb(247, 137, 35);
+    border-radius: 15px;
+    box-shadow: 0 0 15px #000000cd;
 }
 
 .blog-wrapper .blog-uploader .content{
@@ -115,7 +118,7 @@
     font-family: fantasy;
     font-size: 30px;
     border-bottom-style: solid ;
-    border-color: black;
+    border-color: coral;
 }
 
 .blog-wrapper .blog-container .wr{
@@ -146,3 +149,19 @@
     box-shadow: inset;
 }
 
+.blog-posts{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.blog-container p img{
+    height: 45vh;
+    width: auto;
+}
