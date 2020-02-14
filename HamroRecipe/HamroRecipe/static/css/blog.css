@@ -27,7 +27,6 @@
     color: #0088a9;
 }
 .blog-wrapper .blog-uploader{
-
     height: auto;
     position: relative;
     top: 5vh;
@@ -89,13 +88,13 @@
     font-family: 'Montserrat', sans-serif;
     padding-left: 20px;
     padding-bottom: 5vh;
-    height: 200px;
-    width: 800px;
+    height: 132px;
+    width: 600px;
     border-radius: 2vh;
 }
 
 .blog-wrapper .blog-uploader{
-    padding: 10px 10px 10px 10px;
+    padding: 30px 10px 10px 10px;
 }
 
 .blog-container{
