@@ -1,64 +1,85 @@
 from django.shortcuts import render, redirect
 from .models import Recipe, Incredients, Step
+from django.contrib import messages
+from datetime import datetime
+from django.http import HttpResponse
+
+
 # Create your views here.
 
 
 def showIndex(request):
-    return render(request, 'pages/Indexpage.html', { 'title':'Homepage | HamroRecipe'})
+    return render(request, 'pages/Indexpage.html', {'title': 'Homepage | HamroRecipe'})
 
 
 def showContact(request):
-    return render(request, 'pages/contact.html', {'title':"Contact | HamroRecipe"})
+    return render(request, 'pages/contact.html', {'title': "Contact | HamroRecipe"})
 
 
 def showInstitutes(request):
-    return render(request, 'pages/institutes.html', {'title':"Institutes | HamroRecipe"})
+    return render(request, 'pages/institutes.html', {'title': "Institutes | HamroRecipe"})
 
 
 def showRecipe(request):
     if request.method == 'POST':
-        r_name = request.POST['r_name']
-        username = request.POST['username']
-       # video = request.FILES['my-video']
-        img = request.FILES['image']
-        category = request.POST['category']
-        type = request.POST['type']
-        recipe = Recipe(r_name=r_name, username=username, img=img, category=category,
-                        type=type)
-        recipe.save()
-        inc1 = request.POST['inc1']
-        inc2 = request.POST['inc2']
-        inc3 = request.POST['inc3']
-        inc4 = request.POST['inc4']
-        inc5 = request.POST['inc5'] #instance error here
-        inc6 = request.POST['inc6']
-        inc7 = request.POST['inc7']
-        inc8 = request.POST['inc8']
-        inc9 = request.POST['inc9']
-        inc10 = request.POST['inc10']
-        incredient = Incredients(r_name=r_name, inc_1=inc1, inc_2=inc2, inc_3=inc3, inc_4=inc4, inc_5=inc5,
-                                 inc_6=inc6, inc_7=inc7, inc_8=inc8, inc_9=inc9, inc_10=inc10)
-        incredient.save()
-        step1 = request.POST['step1']
-        step2 = request.POST['step2']
-        step3 = request.POST['step3']
-        step4 = request.POST['step4']
-        step5 = request.POST['step5']
-        step6 = request.POST['step6']
-        step7 = request.POST['step7']
-        step8 = request.POST['step8']
-        step9 = request.POST['step9']
-        step10 = request.POST['step10']
-        step11 = request.POST['step11']
-        step = Step(r_name=r_name, step1=step1, step2=step2, step3=step3, step4=step4, step5=step5, step6=step6,
-                    step7=step7, step8=step8, step9=step9, step10=step10, step11=step11)
-        step.save()
-        return redirect("recipe")
+        if request.POST['r_name'] == '' and request.POST['cats'] == '' and request.POST['type'] == '':
+            messages.warning(request, 'Invalid Input')
+            return redirect('recipe')
+        else:
+            new_rec = Recipe()
+            new_rec.username = request.user
+            new_rec.r_name = request.POST['r_name']
+            new_rec.category = request.POST['cats']
+            new_rec.type = request.POST['type']
+            if request.FILES:
+                new_rec.img = request.FILES['image']
+            new_rec.created_at = datetime.now()
+            saved = new_rec.save()
+            # return HttpResponse(new_rec.id)
+            for i in range(1, int(request.POST['ingcount']) + 1):
+                if request.POST['inc' + str(i)] == '' and request.POST['qty' + str(i)] == '':
+                    messages.warning(request, 'Invalid Input')
+                else:
+                    new_ing = Incredients()
+                    new_ing.recipe_id = new_rec
+                    new_ing.name = request.POST['inc' + str(i)]
+                    new_ing.qty = request.POST['qty' + str(i)]
+                    new_ing.save()
+            for i in range(1, int(request.POST['pcount']) + 1):
+                if request.POST['step' + str(i)] == '':
+                    messages.warning(request, 'Invalid Input')
+                else:
+                    new_ing = Incredients()
+                    new_ing.recipe_id = new_rec
+                    new_ing.name = request.POST['inc' + str(i)]
+                    new_ing.qty = request.POST['qty' + str(i)]
+                    new_ing.save()
+        messages.success(request, 'Your Recipe Has Been Successfully Inserted')
+        return redirect('recipe')
+
+
+
+
+
     else:
-        all_recipe = Recipe.objects.all()
-        return render(request, 'recipe.html', {'recipes':all_recipe})
+        rec = Recipe.objects.filter(username=request.user.id).order_by('-created_at').values()[:10]
+        return render(request, 'recipe.html', {'recipes': rec, 'count': range(1, 15)})
 
 
 def showRecipePost(request):
     all_recipe = Recipe.objects.all()
-    return render(request, 'recipepost.html',{'title':'Recipe|HamroRecipe', 'recipes':all_recipe})
+    return render(request, 'recipe/templates/recipepost.html', {'title': 'Recipe|HamroRecipe', 'recipes': all_recipe})
+
+
+def sendForm(request):
+    if request.method == 'POST':
+        if request.POST['r_name'] == '' and request.POST['cat'] == '' and request.POST['type'] == '':
+            messages.warning(request, 'Invalid Input')
+            return redirect('recipe')
+        else:
+            return render(request, 'ingredients.html', {'r_name': request.POST['r_name'],
+                                                        'cat': request.POST['cat'], 'type': request.POST['type'],
+                                                        'ingcount': request.POST['ingcount'],
+                                                        'pcount': request.POST['pcount'],
+                                                        'irange': range(1, int(request.POST['ingcount']) + 1),
+                                                        'prange': range(1, int(request.POST['pcount']) + 1)})

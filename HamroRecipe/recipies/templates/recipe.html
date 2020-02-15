@@ -5,65 +5,71 @@ Recipe | HamroRecipe
 {% block content %}
 
 <div class="recipe-holder">
-    <h1 style="margin:20px" class="recipe">Food Recipes</h1>
+    <h4 style="margin:20px" class="recipe">Food Recipes</h4>
+    {% if recipes %}
     <div class="post-holder">
         {% for recipe in recipes %}
         <div class="card-wrapper">
-        <div class="card-container">
-          <div class="header">
-                <p>{{ recipe.r_name }}</p>
-          </div>
-            <div class="card-body">
-                <div class="image-container">
-                    <img src="{{ recipe.img.url }}" alt="photo nai xaina"/>
+            <div class="card-container">
+                <div class="header">
+                    <p>{{ recipe.r_name }}</p>
+                </div>
+                <div class="card-body">
+                    <div class="image-container">
+<!--                        <img src={% if recipe.img.url%}-->
+<!--                             "{{recipe.img.url}}"-->
+<!--                             {%else%}-->
+
+<!--                             {%endif%} alt="photo nai xaina"/>-->
+                    </div>
+                </div>
+                <div class="footer">
+                    <p> {{ recipe.username }} <a href="#" id="read" onclick="expand()">readmore...</a></p>
+                    <div id="content"><p>{{ recipe.description }}</p></div>
                 </div>
             </div>
-            <div class="footer">
-                <p> {{ recipe.username }} <a href="#" id="read" onclick="expand()">readmore...</a></p>
-                <div id="content" ><p>{{ recipe.description }}</p></div>
-            </div>
-        </div>
         </div>
         {% endfor %}
     </div>
+    {% endif %}
     <div class="recipe-form-holder">
-        <h1>Share your Recipe with Us</h1>
-    <form action="recipe" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        <input type="hidden" name="username" value="{{ user.username }}"/>
-        <li><input type="text" name="r_name" placeholder="Recipe Name Here"></li>
-        <li><h2>Upload video</h2></li>
-        <li><input type="file" name="my-video" placeholder="Video from here"></li>
-        <li><h2>Image</h2></li>
-        <li><input type="file" name = "image" class="content"></li>
-        <li><h2>Category</h2></li>
-        <li><select name="category" id="category">
-            <option value="Continental">Continental</option>
-            <option value="Local">Local</option>
-            <option value="Oriental">Oriental</option>
-            <option value="Western">Western</option>
-            <option value="Sweets">Sweets</option>
-        </select></li>
-        <li><h2>Type</h2></li>
-        <li><select name="type" id="type">
-            <option value="veg">Vegetarian</option>
-            <option value="non-veg">Non-Vegetarian</option>
-        </select></li>
-        <li><h2>Incredients</h2></li>
-        <li><input type="text" placeholder="incredients" name="inc2"><input type="text" placeholder="incredients" name="inc1"></li>
-        <li><input type="text" placeholder="incredients" name="inc3"><input type="text" placeholder="incredients" name="inc4"></li>
-        <li><input type="text" placeholder="incredients" name="inc6"><input type="text" placeholder="incredients" name="inc5"></li>
-        <li><input type="text" placeholder="incredients" name="inc7"><input type="text" placeholder="incredients" name="inc8"></li>
-        <li><input type="text" placeholder="incredients" name="inc9"><input type="text" placeholder="incredients" name="inc10"></li>
-        <li><h2>Procedure</h2></li>
-        <li><input type="text" placeholder="Step1" name="step1"> <input type="text" placeholder="Step2" name="step2"></li>
-        <li><input type="text" placeholder="Step4" name="step4"> <input type="text" placeholder="Step4" name="step4"></li>
-        <li><input type="text" placeholder="Step5" name="step5"> <input type="text" placeholder="Step6" name="step6"></li>
-        <li><input type="text" placeholder="Step7" name="step7"> <input type="text" placeholder="Step8" name="step8"></li>
-        <li><input type="text" placeholder="Step9" name="step9"> <input type="text" placeholder="Step10" name="step10"></li>
-        <li><input type="text" placeholder="Step11" name="step11"></li>
-        <li><button type="submit">Submit</button></li>
-    </form>
+        <h4>Share your Recipe with Us</h4>
+        <form action="genrec" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <li><input type="text" name="r_name" placeholder="Recipe Name Here"></li>
+
+            <li><h5>Category</h5></li>
+            <li><select name="cat" id="category">
+                <option value="Continental">Continental</option>
+                <option value="Local">Local</option>
+                <option value="Oriental">Oriental</option>
+                <option value="Western">Western</option>
+                <option value="Sweets">Sweets</option>
+            </select></li>
+            <li><h5>Type</h5></li>
+            <li><select name="type" id="type">
+                <option value="veg">Vegetarian</option>
+                <option value="non-veg">Non-Vegetarian</option>
+            </select></li>
+
+            <li><h5>Incredients</h5></li>
+            <li><select name="ingcount" >
+                {% for i in count%}
+                <option value="{{i}}">{{i}}</option>
+                {%endfor%}
+            </select></li>
+            <li><h5>Procedure</h5></li>
+            <li><select name="pcount" >
+                {% for i in count%}
+                <option value="{{i}}">{{i}}</option>
+                {%endfor%}
+            </select></li>
+
+
+            <button type="submit">Submit</button>
+            </li>
+        </form>
+
     </div>
 </div>
 {% endblock %}
