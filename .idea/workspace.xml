@@ -2,17 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9dac06c-7529-4ff2-bf8e-d5e79d88bfb1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/PythonRecipe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonRecipe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/recipe.css" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/recipe.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0002_article_img.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0003_auto_20200207_2209.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0004_article_username.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0005_auto_20200208_1417.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0006_auto_20200208_1420.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0007_auto_20200208_1421.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0002_recipe_img.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0003_auto_20200212_1837.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0004_auto_20200212_2021.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0005_auto_20200214_0122.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0006_auto_20200214_2127.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0007_step.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0008_recipe_video.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0009_auto_20200215_0748.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0010_auto_20200215_0807.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0011_recipe_r_id.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/templates/accounts/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/templates/accounts/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/templates/pages/Indexpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/templates/pages/Indexpage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - db.sqlite3" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,9 +90,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlite.xerial" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HamroRecipe" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -73,18 +137,45 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579526144224</updated>
+      <workItem from="1581740017619" duration="2118000" />
+      <workItem from="1581747448433" duration="3912000" />
+      <workItem from="1581751382129" duration="13000" />
+      <workItem from="1581751396065" duration="6000" />
+      <workItem from="1581751413993" duration="5000" />
+      <workItem from="1581751697550" duration="4091000" />
+      <workItem from="1581756643752" duration="1028000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="442" y="173" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581332852898">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="555" y="219" width="800" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581749103920">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="555" y="219" width="800" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1581749103920" />
+    <state x="621" y="281" width="581" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581740827351">
+      <screen x="0" y="36" width="1920" height="1044" />
     </state>
     <state x="442" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1581332852898" />
+    <state x="621" y="281" width="581" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.36.1920.1044@0.36.1920.1044" timestamp="1581740827351" />
     <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581520829342">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1581520829342" />
+    <state x="743" y="316" width="424" height="490" key="FileChooserDialogImpl" timestamp="1581751417533">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="743" y="316" width="424" height="490" key="FileChooserDialogImpl/0.36.1920.1044@0.36.1920.1044" timestamp="1581751417533" />
+    <state x="449" y="193" width="1022" height="736" key="SettingsEditor" timestamp="1581741175499">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="449" y="193" width="1022" height="736" key="SettingsEditor/0.36.1920.1044@0.36.1920.1044" timestamp="1581741175499" />
+    <state x="753" y="158" width="403" height="805" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1581757250457">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="753" y="158" width="403" height="805" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.36.1920.1044@0.36.1920.1044" timestamp="1581757250457" />
     <state x="459" y="191" key="com.intellij.ide.util.TipDialog" timestamp="1581598679549">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -93,5 +184,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="676" y="0" width="697" height="745" maximized="true" key="dock-window-1/0.0.1366.738@0.0.1366.738" timestamp="1581562554129" />
+    <state x="623" y="266" width="672" height="678" key="search.everywhere.popup" timestamp="1581757530868">
+      <screen x="0" y="36" width="1920" height="1044" />
+    </state>
+    <state x="623" y="266" width="672" height="678" key="search.everywhere.popup/0.36.1920.1044@0.36.1920.1044" timestamp="1581757530868" />
   </component>
 </project>

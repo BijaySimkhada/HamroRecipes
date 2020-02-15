@@ -1,21 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
- <div class="slider-container">
+<div class="slider-container">
     <div id="slider">
         <figure>
-        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
-        <img src="{% static 'image/photo.jpg' %}" alt="photo xaina">
-        <img src="{% static 'image/khana1.png' %}" alt="photo xaina">
-        <img src="{% static 'image/photo.jpg' %}" alt="photo xaina">
-        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
+            <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
+            <img src="{% static 'image/photo.jpg' %}" alt="photo xaina">
+            <img src="{% static 'image/khana1.png' %}" alt="photo xaina">
+            <img src="{% static 'image/photo.jpg' %}" alt="photo xaina">
+            <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
         </figure>
     </div>
- </div>
+</div>
+
+
 <section>
-<div class="card-wrapper">
-    <div class="card-container">
-          <div class="header">
+    <div class="card-wrapper">
+        <div class="card-container">
+            <div class="header">
                 <p>Burger</p>
             </div>
             <div class="card-body">
@@ -25,11 +27,11 @@
             </div>
             <div class="footer">
                 <p>BurgerHouse<a href="#" id="read" onclick="expand()">readmore...</a></p>
-                <div id="content" ><p>Burger from the heaven</p></div>
+                <div id="content"><p>Burger from the heaven</p></div>
             </div>
         </div>
-     <div class="card-container">
-          <div class="header">
+        <div class="card-container">
+            <div class="header">
                 <p>Thakali Khana set</p>
             </div>
             <div class="card-body">
@@ -39,11 +41,11 @@
             </div>
             <div class="footer">
                 <p>Thakali<a href="#" id="read" onclick="expand()">readmore...</a></p>
-                <div id="content" ><p> Represents local nepali foods</p></div>
+                <div id="content"><p> Represents local nepali foods</p></div>
             </div>
         </div>
-     <div class="card-container">
-          <div class="header">
+        <div class="card-container">
+            <div class="header">
                 <p>Salad</p>
             </div>
             <div class="card-body">
@@ -53,99 +55,111 @@
             </div>
             <div class="footer">
                 <p>Salad<a href="#" id="read" onclick="expand()">readmore...</a></p>
-                <div id="content" ><p> Nepali salad</p></div>
+                <div id="content"><p> Nepali salad</p></div>
             </div>
         </div>
-<div class="menu">
-    <div class="welcome">
-        <h1>Welcome</h1>
-        <p>we make it happen, something amazing for you everyday. </p>
-    </div>
-    <div class="menu-card">
-     <div class="menu-container">
-          <div class="menu-header">
-                <p>Ads</p>
+        <div class="menu">
+            <div class="welcome">
+                <h1>Welcome</h1>
+                <p>we make it happen, something amazing for you everyday. </p>
             </div>
-            <div class="menu-footer">
-                <p>Other ads here</p>
+            <div class="menu-card">
+                <div class="menu-container">
+                    <div class="menu-header">
+                        <p>Ads</p>
+                    </div>
+                    <div class="menu-footer">
+                        <p>Other ads here</p>
+                    </div>
+                </div>
+                <div class="menu-container">
+                    <div class="menu-header">
+                        <p>Ads</p>
+                    </div>
+                    <div class="menu-footer">
+                        <p>Other ads here</p>
+                    </div>
+                </div>
             </div>
         </div>
-     <div class="menu-container">
-          <div class="menu-header">
-                <p>Ads</p>
-            </div>
-            <div class="menu-footer">
-                <p>Other ads here</p>
-            </div>
-     </div>
-      </div>
-</div>
 
-<section class="slider-container2">
-    <div id="slider2">
-        <figure>
-        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
-        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
-        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
-        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
-        <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
-        </figure>
-    </div>
- </section>
+        <section class="slider-container2">
+            <div id="slider2">
+                <figure>
+                    <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
+                    <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
+                    <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
+                    <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
+                    <img src="{% static 'image/khana.jfif' %}" alt="photo xaina">
+                </figure>
+            </div>
+        </section>
 
-<div class="profile">
-    <div class="welcome">
-          <h1>Cooking Institution</h1>
+        <div class="profile">
+            <div class="welcome">
+                <h1>Cooking Institution</h1>
                 <p class="cont"> Learn cooking with us</p>
+            </div>
+            <div class="profile-container">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="{% static 'image/khana.jfif' %}">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name"><a href="{% url 'institutes' %}">Institute of Culinary Arts</a></h3>
+                        <h4 class="title">Balaju</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook"
+                               aria-hidden="true"></a></li>
+                        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter"
+                               aria-hidden="true"></a></li>
+                        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus"
+                               aria-hidden="true"></a></li>
+                        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin"
+                               aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="{% static 'image/khana.jfif' %}">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">2 Sisters Nepal cooking School</h3>
+                        <h4 class="title">Paknajol Marg</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook"
+                               aria-hidden="true"></a></li>
+                        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter"
+                               aria-hidden="true"></a></li>
+                        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus"
+                               aria-hidden="true"></a></li>
+                        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin"
+                               aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="{% static 'image/khana.jfif' %}">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Nepal Cooking School</h3>
+                        <h4 class="title">Paknajol Marg</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook"
+                               aria-hidden="true"></a></li>
+                        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter"
+                               aria-hidden="true"></a></li>
+                        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus"
+                               aria-hidden="true"></a></li>
+                        <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin"
+                               aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="profile-container">
-            <div class="our-team">
-        <div class="picture">
-          <img class="img-fluid" src="{% static 'image/khana.jfif' %}">
-        </div>
-        <div class="team-content">
-            <h3 class="name"><a href="{% url 'institutes' %}">Institute of Culinary Arts</a></h3>
-          <h4 class="title">Balaju</h4>
-        </div>
-        <ul class="social">
-          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
-          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
-          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
-          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
-        </ul>
-      </div>
-         <div class="our-team">
-        <div class="picture">
-          <img class="img-fluid" src="{% static 'image/khana.jfif' %}">
-        </div>
-        <div class="team-content">
-          <h3 class="name">2 Sisters Nepal cooking School</h3>
-          <h4 class="title">Paknajol Marg</h4>
-        </div>
-        <ul class="social">
-          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
-          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
-          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
-          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
-        </ul>
-      </div>
-         <div class="our-team">
-        <div class="picture">
-          <img class="img-fluid" src="{% static 'image/khana.jfif' %}">
-        </div>
-        <div class="team-content">
-          <h3 class="name">Nepal Cooking School</h3>
-          <h4 class="title">Paknajol Marg</h4>
-        </div>
-        <ul class="social">
-          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
-          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true"></a></li>
-          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-google-plus" aria-hidden="true"></a></li>
-          <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
-        </ul>
-         </div>
-        </div>
-    </div>
-</div>
 </section>
 {% endblock %}

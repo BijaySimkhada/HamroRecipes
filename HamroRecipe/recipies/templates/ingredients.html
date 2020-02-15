@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block title %}
+Recipe | HamroRecipe
+{% endblock %}
+{% block content %}
+
+<div class="recipe-holder">
+    <h4 style="margin:20px" class="recipe">Food Recipes</h4>
+
+    <div class="recipe-form-holder">
+        <h4>Share your Recipe with Us</h4>
+        <form action="recipe" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            name : {{r_name}} type:{{type}} category:{{cat}}
+            <input type="hidden" name="r_name" value="{{r_name}}" placeholder="Recipe Name Here">
+            <input type="hidden" name="cats" value="{{cat}}" placeholder="Recipe Name Here">
+            <input type="hidden" name="type" value="{{type}}" placeholder="Recipe Name Here">
+            <li><h5>Upload video</h5></li>
+            <li><input type="file" name="my-video" placeholder="Video from here"></li>
+            <li><h5>Image</h5></li>
+            <li><input type="file" name="image" class="content"></li>
+            <li><h5>Incredients</h5></li>
+            {% for i in irange%}
+            <li><input type="text" placeholder="Ingredients {{i}}" name="inc{{i}}"> <input type="text" name="qty{{i}}"
+                                                                                           placeholder="qty"></li>
+            {%endfor%}
+            <h2>Procedure</h2></li>
+            {% for i in prange%}
+            <li><input type="text" placeholder="Step {{i}}" name="step{{i}}"></li>
+            {%endfor%}
+            <button type="submit">Submit</button>
+            </li>
+            <input type="hidden" name="pcount" value="{{pcount}}">
+            <input type="hidden" name="ingcount" value="{{ingcount}}">
+        </form>
+    </div>
+</div>
+{% endblock %}

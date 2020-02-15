@@ -1,51 +1,24 @@
 from django.db import models
-
-# Create your models here.
+from django.contrib.auth.models import User
 
 
 class Recipe(models.Model):
-    r_id = models.IntegerField(auto_created=True, default=1)
     r_name = models.CharField(max_length=25, unique=True)
-    video = models.FileField(upload_to='videos/', blank=True) #multi-value dict error
-    username = models.CharField(max_length=25)
+    video = models.FileField(upload_to='videos/', blank=True)  # multi-value dict error
+    username = models.ForeignKey(User, on_delete=models.CASCADE, null=False)
     category = models.CharField(max_length=25)
     type = models.CharField(max_length=25)
     img = models.ImageField(upload_to="photos/recipe", blank=True)
-
-    def __str__(self):
-        return self.r_name
+    created_at = models.DateField(null=True)
 
 
 class Incredients(models.Model):
-    r_name = models.ForeignKey(Recipe, default=1, on_delete=models.SET_DEFAULT)
-    inc_1 = models.CharField(max_length=20)
-    inc_2 = models.CharField(max_length=20)
-    inc_3 = models.CharField(max_length=20)
-    inc_4 = models.CharField(max_length=20)
-    inc_5 = models.CharField(max_length=20)
-    inc_6 = models.CharField(max_length=20, blank=True)
-    inc_7 = models.CharField(max_length=20, blank=True)
-    inc_8 = models.CharField(max_length=20, blank=True)
-    inc_9 = models.CharField(max_length=20, blank=True)
-    inc_10 = models.CharField(max_length=20, blank=True)
-
-    def __str__(self):
-        return self.r_id
+    recipe_id = models.ForeignKey(Recipe, on_delete=models.CASCADE, null=False)
+    name = models.CharField(max_length=255, blank=False)
+    qty = models.FloatField(null=False)
 
 
 class Step(models.Model):
-    r_name = models.ForeignKey(Recipe,default=1, on_delete=models.SET_DEFAULT)
-    step1 = models.CharField(max_length=255)
-    step2 = models.CharField(max_length=255)
-    step3 = models.CharField(max_length=255)
-    step4 = models.CharField(max_length=255)
-    step5 = models.CharField(max_length=255)
-    step6 = models.CharField(max_length=255, blank=True)
-    step7 = models.CharField(max_length=255, blank=True)
-    step8 = models.CharField(max_length=255, blank=True)
-    step9 = models.CharField(max_length=255, blank=True)
-    step10 = models.CharField(max_length=255, blank=True)
-    step11 = models.CharField(max_length=255, blank=True)
-
-    def __str__(self):
-        return self.r_id
+    recipe_id = models.ForeignKey(Recipe, on_delete=models.CASCADE, null=False)
+    step_no = models.IntegerField
+    step_name = models.TextField
