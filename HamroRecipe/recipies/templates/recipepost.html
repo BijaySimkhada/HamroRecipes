@@ -10,7 +10,14 @@
         <p class="wr"><i>{{ recipe.username }}</i></p>
         <p class="slug">{{ recipe.category }}</p>
         <p><img src="{{ recipe.img.url }}" alt=""></p>
+        {% if recipe.video %}
         <p>Video here</p>
+        <p>
+            <video height="500px" width="600px" controls>
+                <source src="{{ recipe.video.url }}" type="video/mp4">
+            </video>
+        </p>
+        {% endif %}
         <h4>Incredients</h4>
         <ol class="body">
         {% for ingredient in ings %}

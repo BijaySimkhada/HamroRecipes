@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f9dac06c-7529-4ff2-bf8e-d5e79d88bfb1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/templates/ingredients.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/templates/ingredients.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipepost.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipepost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

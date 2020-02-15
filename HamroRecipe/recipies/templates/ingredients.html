@@ -11,7 +11,7 @@ Recipe | HamroRecipe
         <h4>Share your Recipe with Us</h4>
         <form action="recipe" method="post" enctype="multipart/form-data">
             {% csrf_token %}
-            <h4>name : {{r_name}}  Type:{{type}}  Category:{{cat}}</h4>
+            <h4>Name : {{r_name}}  Type:{{type}}  Category:{{cat}}</h4>
             <input type="hidden" name="r_name" value="{{r_name}}" placeholder="Recipe Name Here">
             <input type="hidden" name="cats" value="{{cat}}" placeholder="Recipe Name Here">
             <input type="hidden" name="type" value="{{type}}" placeholder="Recipe Name Here">
