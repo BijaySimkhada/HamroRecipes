@@ -2,35 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9dac06c-7529-4ff2-bf8e-d5e79d88bfb1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/PythonRecipe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonRecipe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/card-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/card-layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/layout1.css" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/layout1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/recipe.css" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/recipe.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0002_article_img.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0003_auto_20200207_2209.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0004_article_username.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0005_auto_20200208_1417.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0006_auto_20200208_1420.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/blogs/migrations/0007_auto_20200208_1421.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0002_recipe_img.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0003_auto_20200212_1837.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0004_auto_20200212_2021.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0005_auto_20200214_0122.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0006_auto_20200214_2127.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0007_step.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0008_recipe_video.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0009_auto_20200215_0748.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0010_auto_20200215_0807.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0011_recipe_r_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/recipepost.css" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/recipepost.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/HamroRecipe/static/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/templates/ingredients.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/templates/ingredients.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipepost.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipepost.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HamroRecipe/templates/accounts/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/templates/accounts/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/templates/pages/Indexpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/templates/pages/Indexpage.html" afterDir="false" />
     </list>
@@ -155,10 +139,10 @@
       <screen x="0" y="36" width="1920" height="1044" />
     </state>
     <state x="555" y="219" width="800" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1581749103920" />
-    <state x="621" y="281" width="581" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581740827351">
-      <screen x="0" y="36" width="1920" height="1044" />
+    <state x="442" y="173" width="581" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581760994187">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="442" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1581332852898" />
+    <state x="442" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1581760994187" />
     <state x="621" y="281" width="581" height="397" key="#com.intellij.fileTypes.FileTypeChooser/0.36.1920.1044@0.36.1920.1044" timestamp="1581740827351" />
     <state x="413" y="117" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581520829342">
       <screen x="0" y="0" width="1366" height="738" />
