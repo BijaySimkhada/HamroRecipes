@@ -8,7 +8,7 @@ class Recipe(models.Model):
     username = models.ForeignKey(User, on_delete=models.CASCADE, null=False)
     category = models.CharField(max_length=25)
     type = models.CharField(max_length=25)
-    img = models.ImageField(upload_to="photos/recipe", blank=True)
+    img = models.ImageField(upload_to="photos/recipe", blank=True, null=True)
     created_at = models.DateField(null=True)
 
     def __str__(self):
