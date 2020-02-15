@@ -32,8 +32,9 @@ Recipe | HamroRecipe
         {% csrf_token %}
         <input type="hidden" name="username" value="{{ user.username }}"/>
         <li><input type="text" name="r_name" placeholder="Recipe Name Here"></li>
-        <li><textarea name="description" placeholder="Tell us more | Description"></textarea></li>
-        <li><textarea name="incredients" placeholder="Incredients (NOTE write by giving comma ' , ')"></textarea></li>
+        <li><h2>Upload video</h2></li>
+        <li><input type="file" name="my-video" placeholder="Video from here"></li>
+        <li><h2>Image</h2></li>
         <li><input type="file" name = "image" class="content"></li>
         <li><h2>Category</h2></li>
         <li><select name="category" id="category">
@@ -48,10 +49,19 @@ Recipe | HamroRecipe
             <option value="veg">Vegetarian</option>
             <option value="non-veg">Non-Vegetarian</option>
         </select></li>
+        <li><h2>Incredients</h2></li>
+        <li><input type="text" placeholder="incredients" name="inc2"><input type="text" placeholder="incredients" name="inc1"></li>
+        <li><input type="text" placeholder="incredients" name="inc3"><input type="text" placeholder="incredients" name="inc4"></li>
+        <li><input type="text" placeholder="incredients" name="inc6"><input type="text" placeholder="incredients" name="inc5"></li>
+        <li><input type="text" placeholder="incredients" name="inc7"><input type="text" placeholder="incredients" name="inc8"></li>
+        <li><input type="text" placeholder="incredients" name="inc9"><input type="text" placeholder="incredients" name="inc10"></li>
         <li><h2>Procedure</h2></li>
-        <textarea placeholder="steps  eg. 1) boil water
-                  2) drink water" name="step"/></textarea></li>
-        </section>
+        <li><input type="text" placeholder="Step1" name="step1"> <input type="text" placeholder="Step2" name="step2"></li>
+        <li><input type="text" placeholder="Step4" name="step4"> <input type="text" placeholder="Step4" name="step4"></li>
+        <li><input type="text" placeholder="Step5" name="step5"> <input type="text" placeholder="Step6" name="step6"></li>
+        <li><input type="text" placeholder="Step7" name="step7"> <input type="text" placeholder="Step8" name="step8"></li>
+        <li><input type="text" placeholder="Step9" name="step9"> <input type="text" placeholder="Step10" name="step10"></li>
+        <li><input type="text" placeholder="Step11" name="step11"></li>
         <li><button type="submit">Submit</button></li>
     </form>
     </div>
