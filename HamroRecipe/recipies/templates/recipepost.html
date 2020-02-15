@@ -1,8 +1,32 @@
 {% extends 'base.html' %}
 {% block content %}
-<center><h1>Under Maintenenc</h1></center>
-{% for recipe in recipes %}
-    {{ recipe.r_name }}
-  {% endfor %}
-{% endfor %}
+<div class="blog-wrapper">
+<div class="blog-posts">
+    <h1>Recipe</h1>
+    <hr width="78%">
+    {% for recipe in recipes %}
+    <div class="blog-container">
+        <p class="title">{{ recipe.r_name }}</p>
+        <p class="wr"><i>{{ recipe.username }}</i></p>
+        <p class="slug">{{ recipe.category }}</p>
+        <p><img src="{{ recipe.img.url }}" alt=""></p>
+        <p>Video here</p>
+        <h4>Incredients</h4>
+        <ol class="body">
+        {% for ingredient in ings %}
+            <li>{{ ingredient.name }} {{ ingredient.qty }} gram</li>
+        {% endfor %}</ol>
+        <h4>Steps</h4>
+        <ol class="body">
+            {% for step in pros %}
+                <li>{{ step.step_name }}</li>
+            {% endfor %}
+        </ol>
+        <p class="date"><i>Uploaded at:</i>{{ recipe.created_at }}</p>
+        <br>
+    </div>
+    {% endfor %}
+    <hr width="95%">
+</div>
+</div>
 {% endblock %}

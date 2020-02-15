@@ -9,7 +9,8 @@ from django.http import HttpResponse
 
 
 def showIndex(request):
-    return render(request, 'pages/Indexpage.html', {'title': 'Homepage | HamroRecipe'})
+    rec = Recipe.objects.order_by('-created_at').all()[:4]
+    return render(request, 'pages/Indexpage.html', {'title': 'Homepage | HamroRecipe', 'recipes':rec})
 
 
 def showContact(request):
@@ -49,26 +50,16 @@ def showRecipe(request):
                 if request.POST['step' + str(i)] == '':
                     messages.warning(request, 'Invalid Input')
                 else:
-                    new_ing = Incredients()
-                    new_ing.recipe_id = new_rec
-                    new_ing.name = request.POST['inc' + str(i)]
-                    new_ing.qty = request.POST['qty' + str(i)]
-                    new_ing.save()
+                    new_stp = Step()
+                    new_stp.recipe_id = new_rec
+                    new_stp.step_name = request.POST['step' + str(i)]
+                    new_stp.save()
         messages.success(request, 'Your Recipe Has Been Successfully Inserted')
         return redirect('recipe')
-
-
-
-
-
     else:
-        rec = Recipe.objects.filter(username=request.user.id).order_by('-created_at').values()[:10]
+        rec = Recipe.objects.order_by('-created_at').all()[:10]
         return render(request, 'recipe.html', {'recipes': rec, 'count': range(1, 15)})
 
-
-def showRecipePost(request):
-    all_recipe = Recipe.objects.all()
-    return render(request, 'recipe/templates/recipepost.html', {'title': 'Recipe|HamroRecipe', 'recipes': all_recipe})
 
 
 def sendForm(request):
@@ -83,3 +74,11 @@ def sendForm(request):
                                                         'pcount': request.POST['pcount'],
                                                         'irange': range(1, int(request.POST['ingcount']) + 1),
                                                         'prange': range(1, int(request.POST['pcount']) + 1)})
+
+
+
+def showRecipePost(request, id):
+    rec = Recipe.objects.filter(id=id).order_by('-created_at').all()[:10]
+    ing = Incredients.objects.filter(recipe_id=id).all()
+    pro = Step.objects.filter(recipe_id=id).all()
+    return render(request, 'recipepost.html', {'title': 'Recipe|HamroRecipe', 'recipes': rec, 'ings':ing, 'pros':pro})

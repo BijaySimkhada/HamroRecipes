@@ -4,12 +4,15 @@ from django.contrib.auth.models import User
 
 class Recipe(models.Model):
     r_name = models.CharField(max_length=25, unique=True)
-    video = models.FileField(upload_to='videos/', blank=True)  # multi-value dict error
+    video = models.FileField(upload_to='videos/recipe', blank=True, null=True)  # multi-value dict error
     username = models.ForeignKey(User, on_delete=models.CASCADE, null=False)
     category = models.CharField(max_length=25)
     type = models.CharField(max_length=25)
     img = models.ImageField(upload_to="photos/recipe", blank=True)
     created_at = models.DateField(null=True)
+
+    def __str__(self):
+        return self.r_name
 
 
 class Incredients(models.Model):
@@ -20,5 +23,5 @@ class Incredients(models.Model):
 
 class Step(models.Model):
     recipe_id = models.ForeignKey(Recipe, on_delete=models.CASCADE, null=False)
-    step_no = models.IntegerField
-    step_name = models.TextField
+    step_no = models.IntegerField(default=1)
+    step_name = models.TextField(default=1)

@@ -109,7 +109,8 @@
             -ms-transition: 0.5s all ease;
          }
         .page-footer {
-        font-family: 'Montserrat', sans-serif;
+            margin-top: 5vh;
+            font-family: 'Montserrat', sans-serif;
             padding: 50px 20px 0px 20px;
             background-color: #333;
             height:20vh;

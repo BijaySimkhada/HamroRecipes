@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}
 Recipe | HamroRecipe
 {% endblock %}
@@ -9,26 +10,22 @@ Recipe | HamroRecipe
     {% if recipes %}
     <div class="post-holder">
         {% for recipe in recipes %}
-        <div class="card-wrapper">
+        <a href="post/{{ recipe.id }}"><div class="card-wrapper">
             <div class="card-container">
                 <div class="header">
                     <p>{{ recipe.r_name }}</p>
                 </div>
                 <div class="card-body">
                     <div class="image-container">
-<!--                        <img src={% if recipe.img.url%}-->
-<!--                             "{{recipe.img.url}}"-->
-<!--                             {%else%}-->
-
-<!--                             {%endif%} alt="photo nai xaina"/>-->
+                        <img src="{{ recipe.img.url }}" alt="photo nai xaina"/>
                     </div>
                 </div>
                 <div class="footer">
-                    <p> {{ recipe.username }} <a href="#" id="read" onclick="expand()">readmore...</a></p>
-                    <div id="content"><p>{{ recipe.description }}</p></div>
+                    <p>{{ recipe.type }}</p>
+                    <p>By {{ recipe.username }}</p>
                 </div>
             </div>
-        </div>
+        </div></a>
         {% endfor %}
     </div>
     {% endif %}

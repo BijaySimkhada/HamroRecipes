@@ -16,48 +16,24 @@
 
 <section>
     <div class="card-wrapper">
-        <div class="card-container">
-            <div class="header">
-                <p>Burger</p>
-            </div>
-            <div class="card-body">
-                <div class="image-container">
-                    <img src="{% static 'image/burger.png' %}" alt="photo nai xaina"/>
+        {% for recipe in recipes %}
+        <a href="post/{{ recipe.id }}"><div class="card-wrapper">
+            <div class="card-container">
+                <div class="header">
+                    <p>{{ recipe.r_name }}</p>
+                </div>
+                <div class="card-body">
+                    <div class="image-container">
+                        <img src="{{ recipe.img.url }}" alt="photo nai xaina"/>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>{{ recipe.type }}</p>
+                    <p> {{ recipe.username }}</p>
                 </div>
             </div>
-            <div class="footer">
-                <p>BurgerHouse<a href="#" id="read" onclick="expand()">readmore...</a></p>
-                <div id="content"><p>Burger from the heaven</p></div>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="header">
-                <p>Thakali Khana set</p>
-            </div>
-            <div class="card-body">
-                <div class="image-container">
-                    <img src="{% static 'image/photo.jpg' %}" alt="photo nai xaina"/>
-                </div>
-            </div>
-            <div class="footer">
-                <p>Thakali<a href="#" id="read" onclick="expand()">readmore...</a></p>
-                <div id="content"><p> Represents local nepali foods</p></div>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="header">
-                <p>Salad</p>
-            </div>
-            <div class="card-body">
-                <div class="image-container">
-                    <img src="{% static 'image/khana.jfif' %}" alt="photo nai xaina"/>
-                </div>
-            </div>
-            <div class="footer">
-                <p>Salad<a href="#" id="read" onclick="expand()">readmore...</a></p>
-                <div id="content"><p> Nepali salad</p></div>
-            </div>
-        </div>
+        </div></a>
+        {% endfor %}
         <div class="menu">
             <div class="welcome">
                 <h1>Welcome</h1>

@@ -80,7 +80,7 @@ header {
 .nav__links input[type="text"]{
     font-family: 'Montserrat', sans-serif;
     border-color:lightgrey;
-    text-style: bold;
+    font-style: bold;
     position: relative;
     background: lightgrey;
     border-style:solid;

@@ -11,12 +11,12 @@ Recipe | HamroRecipe
         <h4>Share your Recipe with Us</h4>
         <form action="recipe" method="post" enctype="multipart/form-data">
             {% csrf_token %}
-            name : {{r_name}} type:{{type}} category:{{cat}}
+            <h4>name : {{r_name}}  Type:{{type}}  Category:{{cat}}</h4>
             <input type="hidden" name="r_name" value="{{r_name}}" placeholder="Recipe Name Here">
             <input type="hidden" name="cats" value="{{cat}}" placeholder="Recipe Name Here">
             <input type="hidden" name="type" value="{{type}}" placeholder="Recipe Name Here">
             <li><h5>Upload video</h5></li>
-            <li><input type="file" name="my-video" placeholder="Video from here"></li>
+            <li><input type="file" name="videos" placeholder="Video from here"></li>
             <li><h5>Image</h5></li>
             <li><input type="file" name="image" class="content"></li>
             <li><h5>Incredients</h5></li>
