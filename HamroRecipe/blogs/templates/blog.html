@@ -15,9 +15,11 @@
         <button type="submit" class="content">Upload</button>
     </form>
     </div>
+    {% if articles %}
     <div class="blog-posts">
     <h1>Blog Posts</h1>
     <hr width="78%">
+
     {% for article in articles %}
     <div class="blog-container">
         <p class="title">{{ article.title }}</p>
@@ -31,5 +33,6 @@
     <hr width="95%">
     {% endfor %}
     </div>
+    {% endif %}
     </div>
 {% endblock %}

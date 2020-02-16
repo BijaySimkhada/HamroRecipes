@@ -7,8 +7,8 @@
     {% for recipe in recipes %}
     <div class="blog-container">
         <p class="title">{{ recipe.r_name }}</p>
-        <p class="wr"><i>{{ recipe.username }}</i></p>
-        <p class="slug">{{ recipe.category }}</p>
+        <p class="wr"><i>By, {{ recipe.username }}</i></p>
+        <p class="slug">Category: {{ recipe.category }}</p>
         {% if recipe.img %}
         <p><img src="{{ recipe.img.url }}" alt=""></p>
         {% endif %}
@@ -20,12 +20,12 @@
             </video>
         </p>
         {% endif %}
-        <h4>Incredients</h4>
+        <h1>Incredients</h1>
         <ol class="body">
         {% for ingredient in ings %}
             <li>{{ ingredient.name }} {{ ingredient.qty }} {{ ingredient.unit }}</li>
         {% endfor %}</ol>
-        <h4>Steps</h4>
+        <h1>Steps</h1>
         <ol class="body">
             {% for step in pros %}
                 <li>{{ step.step_name }}</li>
@@ -33,6 +33,10 @@
         </ol>
         <p class="date"><i>Uploaded at:</i>{{ recipe.created_at }}</p>
         <br>
+    </div>
+    <div class="feed-back">
+        <textarea name="feedback" id="" cols="100" rows="10" style="font-family:'Montserrat',san-serif" placeholder="feedback section this is static for now"></textarea>
+        <br><button style="height:40px">Submit</button>
     </div>
     {% endfor %}
     <hr width="95%">
