@@ -34,6 +34,7 @@ def showRecipe(request):
             new_rec.type = request.POST['type']
             if request.FILES:
                 new_rec.img = request.FILES['image']
+                new_rec.video = request.FILES['videos']
             new_rec.created_at = datetime.now()
             saved = new_rec.save()
             # return HttpResponse(new_rec.id)

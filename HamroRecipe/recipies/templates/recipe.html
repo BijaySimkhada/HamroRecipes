@@ -7,10 +7,11 @@ Recipe | HamroRecipe
 
 <div class="recipe-holder">
     <h4 style="margin:20px" class="recipe">Food Recipes</h4>
-    {% if recipes %}
+
     <div class="post-holder">
         {% for recipe in recipes %}
-        <a href="post/{{ recipe.id }}"><div class="card-wrapper">
+            {% if recipe.seen  == True %}
+         <a href="post/{{ recipe.id }}"><div class="card-wrapper">
             <div class="card-container">
                 <div class="header">
                     <p>{{ recipe.r_name }}</p>
@@ -23,12 +24,14 @@ Recipe | HamroRecipe
                 <div class="footer">
                     <p>{{ recipe.type }}</p>
                     <p>By {{ recipe.username }}</p>
+
                 </div>
             </div>
         </div></a>
+        {% endif %}
         {% endfor %}
     </div>
-    {% endif %}
+
     <div class="recipe-form-holder">
         <h4>Share your Recipe with Us</h4>
         <form action="genrec" method="post" enctype="multipart/form-data">
