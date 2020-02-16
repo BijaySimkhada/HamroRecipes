@@ -9,7 +9,9 @@
         <p class="title">{{ recipe.r_name }}</p>
         <p class="wr"><i>{{ recipe.username }}</i></p>
         <p class="slug">{{ recipe.category }}</p>
+        {% if recipe.img %}
         <p><img src="{{ recipe.img.url }}" alt=""></p>
+        {% endif %}
         {% if recipe.video %}
         <p>Video here</p>
         <p>

@@ -7,7 +7,7 @@ Recipe | HamroRecipe
 
 <div class="recipe-holder">
     <h4 style="margin:20px" class="recipe">Food Recipes</h4>
-
+    {% if recipes %}
     <div class="post-holder">
         {% for recipe in recipes %}
             {% if recipe.seen  == True %}
@@ -18,7 +18,9 @@ Recipe | HamroRecipe
                 </div>
                 <div class="card-body">
                     <div class="image-container">
+                        {% if recipe.img %}
                         <img src="{{ recipe.img.url }}" alt="photo nai xaina"/>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="footer">
@@ -31,13 +33,12 @@ Recipe | HamroRecipe
         {% endif %}
         {% endfor %}
     </div>
-
+    {% endif %}
     <div class="recipe-form-holder">
         <h4>Share your Recipe with Us</h4>
         <form action="genrec" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             <li><input type="text" name="r_name" placeholder="Recipe Name Here"></li>
-
             <li><h5>Category</h5></li>
             <li><select name="cat" id="category">
                 <option value="Continental">Continental</option>
