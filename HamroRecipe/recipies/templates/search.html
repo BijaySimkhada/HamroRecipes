@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section style="height:80vh">
+        <center><h1>Search Result for {{ content }}</h1></center>
+            {% if recipes %}
+    <div class="post-holder">
+        {% for recipe in recipes %}
+            {% if recipe.seen  == True %}
+         <a href="post/{{ recipe.id }}"><div class="card-wrapper">
+            <div class="card-container">
+                <div class="header">
+                    <p>{{ recipe.r_name }}</p>
+                </div>
+                <div class="card-body">
+                    <div class="image-container">
+                        {% if recipe.img %}
+                        <img src="{{ recipe.img.url }}" alt="photo nai xaina"/>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>{{ recipe.type }}</p>
+                    <p>By {{ recipe.username }}</p>
+                </div>
+            </div>
+        </div></a>
+        {% endif %}
+        {% endfor %}
+    </div>
+        {% else %}
+        <center><h1>NONE</h1></center>
+        {% endif %}
+    </section>
+{% endblock %}

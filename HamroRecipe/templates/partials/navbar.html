@@ -6,12 +6,15 @@
              <ul class="nav__links">
             <li><a href="{% url 'home' %}" class="lol">Home</a></li>
             <li><a href="{% url 'recipe' %}" class="lol">Recipes</a></li>
-            <li><input type="text" name="search" placeholder="  search here">
+                 <form action="search" method="post">
+                     {% csrf_token %}
+            <li><input type="text" name="search-content" placeholder="  search here">
                 <a href="#" class="srch">
-                    <i class="fas fa-search"></i>
+                    <button type="submit" class="fas fa-search"></button>
                 </a>
                 </input>
             </li>
+                     </form>
             <li><a href="{% url 'blog' %}" class="lol">Blog</a></li>
             <li><a href="{% url 'contact' %}" class="lol">Contact</a></li>
             <li><a href="#" class="lol">Hello, {{user.first_name}}</a></li>
