@@ -9,4 +9,5 @@ urlpatterns = [
     path('recipe', views.showRecipe, name="recipe"),
     path('post/<int:id>', views.showRecipePost, name="rpost"),
     path('genrec',views.sendForm,name='genrec'),
+    path('search', views.searchHandle, name="search"),
 ]

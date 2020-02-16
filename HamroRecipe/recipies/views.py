@@ -7,6 +7,11 @@ from django.http import HttpResponse
 
 # Create your views here.
 
+def searchHandle(request):
+    search = request.POST['search-content']
+    rec = Recipe.objects.filter(r_name__contains=search)
+    ing = Incredients.objects.filter(name=search)
+    return render(request, 'search.html', {'title': 'Search Result|HamroRecipe', 'recipes':rec, 'content':search, 'ingredients':ing})
 
 def showIndex(request):
     rec = Recipe.objects.order_by('-created_at').all()[:4]

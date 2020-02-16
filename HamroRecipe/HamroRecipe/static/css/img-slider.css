@@ -28,7 +28,7 @@
             }
         }
         .slider-container{
-            height: 78vh;
+            height: 50vh;
             width: 100%;
         }
         .slider-container #slider{
@@ -36,7 +36,7 @@
             width: 100%;
         }
         .slider-container #slider figure img{
-            height: 90vh;
+            height: 70vh;
             object-fit: cover;
             width: 20%;
             float: left;
@@ -52,16 +52,19 @@
             animation: 20s slider infinite;
         }
 .slider-container2{
-            padding:40px 300px 20px 300px;
-            height: 45vh;
+    margin-top: 5px;
+            padding:10px 300px 20px 300px;
+            height: 60vh;
             width: 100%;
+            background-color: rgb(209, 199, 199);
+
         }
         .slider-container2 #slider2{
             overflow: hidden;
             width: 100%;
         }
         .slider-container2 #slider2 figure img{
-            height: 45vh;
+            height: 57vh;
             object-fit: cover;
             width: 20%;
             float: left;
