@@ -21,7 +21,7 @@
         <h4>Incredients</h4>
         <ol class="body">
         {% for ingredient in ings %}
-            <li>{{ ingredient.name }} {{ ingredient.qty }} gram</li>
+            <li>{{ ingredient.name }} {{ ingredient.qty }} {{ ingredient.unit }}</li>
         {% endfor %}</ol>
         <h4>Steps</h4>
         <ol class="body">
