@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f9dac06c-7529-4ff2-bf8e-d5e79d88bfb1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/templates/ingredients.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/templates/ingredients.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipepost.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipepost.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/views.py" afterDir="false" />
     </list>
@@ -68,7 +70,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../HamroRecipe" />
+    <property name="last_opened_file_path" value="D:/HamroRecipe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,15 +80,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PythonRecipe\HamroRecipe\blogs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PythonRecipe\HamroRecipe\recipies\templates" />
       <recent name="D:\PythonRecipe\HamroRecipe\blogs\templates" />
       <recent name="D:\PythonRecipe\HamroRecipe\HamroRecipe\static\image" />
       <recent name="D:\PythonRecipe\HamroRecipe\media\photos" />
       <recent name="D:\PythonRecipe\HamroRecipe\media" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PythonRecipe\HamroRecipe\blogs" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -125,9 +127,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="555" y="219" width="800" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581749103920">
-      <screen x="0" y="36" width="1920" height="1044" />
+    <state x="395" y="129" width="800" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581820304604">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="395" y="129" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1581820304604" />
     <state x="555" y="219" width="800" height="683" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.36.1920.1044@0.36.1920.1044" timestamp="1581749103920" />
     <state x="442" y="173" width="581" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581760994187">
       <screen x="0" y="0" width="1366" height="738" />
@@ -158,9 +161,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="676" y="0" width="697" height="745" maximized="true" key="dock-window-1/0.0.1366.738@0.0.1366.738" timestamp="1581562554129" />
-    <state x="623" y="266" width="672" height="678" key="search.everywhere.popup" timestamp="1581757530868">
-      <screen x="0" y="36" width="1920" height="1044" />
+    <state x="443" y="163" width="672" height="480" key="search.everywhere.popup" timestamp="1581820361894">
+      <screen x="0" y="0" width="1366" height="738" />
     </state>
+    <state x="443" y="163" width="672" height="480" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1581820361894" />
     <state x="623" y="266" width="672" height="678" key="search.everywhere.popup/0.36.1920.1044@0.36.1920.1044" timestamp="1581757530868" />
   </component>
 </project>

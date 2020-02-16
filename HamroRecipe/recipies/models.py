@@ -19,6 +19,7 @@ class Incredients(models.Model):
     recipe_id = models.ForeignKey(Recipe, on_delete=models.CASCADE, null=False)
     name = models.CharField(max_length=255, blank=False)
     qty = models.FloatField(null=False)
+    unit = models.CharField(max_length=25)
 
 
 class Step(models.Model):
