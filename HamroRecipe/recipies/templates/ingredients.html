@@ -11,7 +11,7 @@ Recipe | HamroRecipe
         <h4>Share your Recipe with Us</h4>
         <form action="recipe" method="post" enctype="multipart/form-data">
             {% csrf_token %}
-            <h4>name : {{r_name}}  Type:{{type}}  Category:{{cat}}</h4>
+            <h4>Name : {{r_name}}  Type:{{type}}  Category:{{cat}}</h4>
             <input type="hidden" name="r_name" value="{{r_name}}" placeholder="Recipe Name Here">
             <input type="hidden" name="cats" value="{{cat}}" placeholder="Recipe Name Here">
             <input type="hidden" name="type" value="{{type}}" placeholder="Recipe Name Here">
@@ -22,7 +22,17 @@ Recipe | HamroRecipe
             <li><h5>Incredients</h5></li>
             {% for i in irange%}
             <li><input type="text" placeholder="Ingredients {{i}}" name="inc{{i}}"> <input type="text" name="qty{{i}}"
-                                                                                           placeholder="qty"></li>
+                                                                                           placeholder="qty">
+                <select name="unit{{i}}" id="">
+                    <option value="ltr">Ltr</option>
+                    <option value="kg">Kg</option>
+                    <option value="Gram">Gram</option>
+                    <option value="tea spoon">Tea spoon</option>
+                    <option value="as required">As required</option>
+                    <option value="packet">Packet</option>
+                    <option value="piece">Piece</option>
+                </select>
+            </li>
             {%endfor%}
             <h2>Procedure</h2></li>
             {% for i in prange%}

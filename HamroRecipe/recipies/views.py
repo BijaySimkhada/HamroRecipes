@@ -46,6 +46,7 @@ def showRecipe(request):
                     new_ing.recipe_id = new_rec
                     new_ing.name = request.POST['inc' + str(i)]
                     new_ing.qty = request.POST['qty' + str(i)]
+                    new_ing.unit = request.POST['unit' + str(i)]
                     new_ing.save()
             for i in range(1, int(request.POST['pcount']) + 1):
                 if request.POST['step' + str(i)] == '':
