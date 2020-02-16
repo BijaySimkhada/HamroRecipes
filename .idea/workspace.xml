@@ -10,6 +10,8 @@
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipepost.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/templates/recipepost.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HamroRecipe/recipies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/recipies/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HamroRecipe/templates/pages/Indexpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HamroRecipe/templates/pages/Indexpage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

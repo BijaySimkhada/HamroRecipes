@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 
 class Recipe(models.Model):
-    r_name = models.CharField(max_length=25, unique=True)
+    r_name = models.CharField(max_length=25, unique=False)
     video = models.FileField(upload_to='videos/recipe', blank=True, null=True)  # multi-value dict error
     seen=models.BooleanField(default=False)
     username = models.ForeignKey(User, on_delete=models.CASCADE, null=False)
