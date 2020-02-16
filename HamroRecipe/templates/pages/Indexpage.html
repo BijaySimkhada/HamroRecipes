@@ -17,6 +17,7 @@
 <section>
     <div class="card-wrapper">
         {% for recipe in recipes %}
+        {% if recipe.seen  == True %}
         <a href="post/{{ recipe.id }}"><div class="card-wrapper">
             <div class="card-container">
                 <div class="header">
@@ -35,6 +36,7 @@
                 </div>
             </div>
         </div></a>
+        {% endif %}
         {% endfor %}
         <div class="menu">
             <div class="welcome">
@@ -103,7 +105,7 @@
                         <img class="img-fluid" src="{% static 'image/khana.jfif' %}">
                     </div>
                     <div class="team-content">
-                        <h3 class="name">2 Sisters Nepal cooking School</h3>
+                        <h3 class="name"><a href="{% url 'institutes' %}">2 Sisters Nepal cooking School</a></h3>
                         <h4 class="title">Paknajol Marg</h4>
                     </div>
                     <ul class="social">
@@ -122,7 +124,7 @@
                         <img class="img-fluid" src="{% static 'image/khana.jfif' %}">
                     </div>
                     <div class="team-content">
-                        <h3 class="name">Nepal Cooking School</h3>
+                        <h3 class="name"><a href="{% url 'institutes' %}"> Cooking School</a></h3>
                         <h4 class="title">Paknajol Marg</h4>
                     </div>
                     <ul class="social">
