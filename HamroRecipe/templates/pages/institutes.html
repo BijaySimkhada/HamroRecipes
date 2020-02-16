@@ -1,63 +1,95 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <style>.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+<style>* {
+  box-sizing: border-box;
 }
 
-.price {
-  color: grey;
-  font-size: 22px;
-}
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
+/* Style inputs */
+input[type=text], select, textarea {
   width: 100%;
-  font-size: 18px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-.card button:hover {
-  opacity: 0.7;
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 }</style>
-</head>
-<body>
 <div class="container">
+  <div style="text-align:center">
+    <h2>2 Sisters Nepal Cooking School Kathmandu</h2>
+    <p>Get your Professional cooking Degree here</p>
+  </div>
   <div class="row">
-    <div class="column-66">
-      ...
+    <div class="column">
+      <img src="{% static 'image/khana1.png' %}" style="width:100%">
     </div>
-    <div class="column-33">
-      ...
+    <div class="column">
+            <p>At 2SISTERS NEPAL COOKING SCHOOL, you will have lots of fun and amazing hands-on cooking
+                experience that will immerse you in Nepali culture and traditions.</p>
+
+
+               <h2  style="color:blue;">Courses Time:</h2>
+        <hr  style="color:orange;">
+                <p>Three times everyday</p>
+        <ol>
+            <tr>At 9:00 am</tr>
+            <tr>At 1:00 am</tr>
+            <tr>At 4:00 am</tr>
+        </ol>
+        <hr>
+        <br>
+            <h3>Mon-Sun classes are expected to run for 3hrs</h3>
+        <hr>.
+                <h2>
+
+                Reserve your seat for best culinary experience with us Now!
+
+                </h2>
+        <hr>
+         <h1>Contact Us</h1>
+        <hr>
+        <p>Phone:9844354354</p>
+        <p>www.2sister.com.np</p>
+        <p>Address: Paknajol Marg, Kathmandu 44600</p>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="column-33">
-      ...
-    </div>
-    <div class="column-66">
-      ...
-    </div>
-  </div>
-</div>
-</body>
-</html>
 {% endblock %}
