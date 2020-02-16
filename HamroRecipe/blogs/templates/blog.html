@@ -5,7 +5,7 @@
     <h1>Upload Blog</h1>
     <hr width="78%">
     <div class="blog-uploader">
-        <form action="/blog/" method="post" enctype="multipart/form-data">
+        <form action="/blog/" method="post" enctype="multipart/form_data">
         {% csrf_token %}
         <input type="hidden" value="{{ user.username }}" name="username">
         <input type="text" name="title" placeholder="title" class="content"><br>
@@ -21,7 +21,7 @@
     {% for article in articles %}
     <div class="blog-container">
         <p class="title">{{ article.title }}</p>
-        <p class="wr"><i>{{ article.user_name }}</i></p>
+        <p class="wr"style="font-size:18px"><i><b>By:</b>{{ article.user_name }}</i></p>
         <p class="slug">{{ article.slug }}</p>
         <p><img src="{{ article.img.url }}" alt=""></p>
         <p class="body">{{ article.body }}</p>

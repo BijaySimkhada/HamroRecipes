@@ -88,7 +88,7 @@
     font-family: 'Montserrat', sans-serif;
     padding-left: 20px;
     padding-bottom: 5vh;
-    height: 132px;
+    height: 250px;
     width: 600px;
     border-radius: 2vh;
 }
@@ -102,6 +102,7 @@
     top: 3vh;
     left: 3vh;
 }
+
 
 .blog-container p{
     display: flex;
@@ -138,9 +139,10 @@
 .blog-wrapper .blog-container .body{
     height: auto;
     width: 95%;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
+
     margin: 5vh;
     padding: 5vh ;
     background-color:rgb(248, 241, 241);

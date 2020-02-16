@@ -24,7 +24,9 @@
                 </div>
                 <div class="card-body">
                     <div class="image-container">
+                        {% if recipe.img %}
                         <img src="{{ recipe.img.url }}" alt="photo nai xaina"/>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="footer">

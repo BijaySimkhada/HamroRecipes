@@ -28,7 +28,7 @@
             }
         }
         .slider-container{
-            height: 78vh;
+            height: 70vh;
             width: 100%;
         }
         .slider-container #slider{
@@ -52,16 +52,17 @@
             animation: 20s slider infinite;
         }
 .slider-container2{
-            padding:40px 300px 20px 300px;
-            height: 45vh;
+            padding:5px 300px 5px 300px;
+            height: 60vh;
             width: 100%;
+            background-color: black;
         }
         .slider-container2 #slider2{
             overflow: hidden;
             width: 100%;
         }
         .slider-container2 #slider2 figure img{
-            height: 45vh;
+            height: 58vh;
             object-fit: cover;
             width: 20%;
             float: left;

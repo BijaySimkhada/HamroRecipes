@@ -7,9 +7,11 @@
     {% for recipe in recipes %}
     <div class="blog-container">
         <p class="title">{{ recipe.r_name }}</p>
-        <p class="wr"><i>{{ recipe.username }}</i></p>
+        <p class="wr" style="font-size:18px"><i><b>By:</b>{{ recipe.username }}</i></p>
         <p class="slug">{{ recipe.category }}</p>
+        {% if recipe.img %}
         <p><img src="{{ recipe.img.url }}" alt=""></p>
+        {% endif %}
         {% if recipe.video %}
         <p>Video here</p>
         <p>
@@ -18,17 +20,17 @@
             </video>
         </p>
         {% endif %}
-        <h4>Incredients</h4>
-        <ol class="body">
+        <h1>Incredients</h1>
+        <ul class="body">
         {% for ingredient in ings %}
             <li>{{ ingredient.name }} {{ ingredient.qty }} {{ ingredient.unit }}</li>
-        {% endfor %}</ol>
-        <h4>Steps</h4>
-        <ol class="body">
+        {% endfor %}</ul>
+        <h1>Steps</h1>
+        <ul class="body">
             {% for step in pros %}
                 <li>{{ step.step_name }}</li>
             {% endfor %}
-        </ol>
+        </ul>
         <p class="date"><i>Uploaded at:</i>{{ recipe.created_at }}</p>
         <br>
     </div>
